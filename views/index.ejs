@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: flexible;
+        border-collapse: collapse;
+        motion: circle();
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: red;
+      }
+      tr {
+        background-color: aqua;
+      }
+      h1 {
+        text-align: center;
+        color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>All User and Their History</h1>
+    <table>
+      <tr>
+        <th>ShortId</th>
+        <th>Redirected URL</th>
+        <th>Click History</th>
+      </tr>
+      <% url.forEach(element => { %>
+      <tr>
+        <td><%= element.shortId %></td>
+        <td><%= element.redirectURL %></td>
+        <td><%= element.visitHistory %></td>
+      </tr>
+
+      <% }) %>
+    </table>
+    <form action="https://www.google.com">
+      <input type="text" placeholder="Enter Name" />Enter your Name
+    </form>
+    <input type="submit" name="submit1" value="Submit" />
+  </body>
+</html>

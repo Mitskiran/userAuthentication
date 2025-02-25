@@ -1,0 +1,29 @@
+{
+  "name": "project-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "http": "^0.0.1-security",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.6",
+    "nanoid": "^5.0.9",
+    "nodemon": "^3.1.9",
+    "path": "^0.12.7",
+    "shortid": "^2.2.17",
+    "url": "^0.11.4",
+    "validator": "^13.12.0"
+  },
+  "devDependencies": {
+    "prettier": "3.5.1"
+  }
+}

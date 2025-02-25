@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    
+      table {
+        width: flexible;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: red;
+      }
+      tr {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>All Users</h2>
+    <table>
+      <tr>
+        <th>ShortId</th>
+        <th>RedirectedURl</th>
+        <th>Clicks</th>
+      </tr>
+      <% url.forEach(element => { %>
+      <tr>
+        <td><%= element.shortId %></td>
+        <td><%= element.redirectURL %></td>
+        <td><%= element.visitHistory %></td>
+      </tr>
+
+      <% }) %>
+    </table>
+  </body>
+</html>
