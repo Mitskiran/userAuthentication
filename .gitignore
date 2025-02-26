@@ -2,3 +2,4 @@
 #Ignore .vs directory
 .vs/
 node_modules/
+.env/
