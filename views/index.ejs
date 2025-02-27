@@ -38,8 +38,8 @@
       </tr>
       <% url.forEach(element => { %>
       <tr>
-        <td><%= element.shortId %></td>
-        <td><%= element.redirectURL %></td>
+        <td><a href="http://localhost:3000/url/short/<%=element.shortId%>"><%= element.shortId %></a></td>
+        <td> <%= element.redirectURL %></a></td>
         <td><%= element.visitHistory %></td>
       </tr>
 

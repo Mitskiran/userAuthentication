@@ -13,11 +13,7 @@ async function HandleGetAllUser(req, res) {
     res.status(400).json({ message: "Error as allUser is not Valid" });
   }
 
-  const User = allUser.map(
-    (url) => `<tr><td>${url.shortId}</td>
-  <td>${url.redirectURL}</td>
-  <td>${url.visitHistory.length}</td></tr>`
-  );
+ 
   /*
   res.end(`<html><head><style> table { width: flexible; border-collapse: collapse; }
   th, td { border: 10px solid black; padding: 8px; text-align: left; }
