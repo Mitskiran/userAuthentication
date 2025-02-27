@@ -6,6 +6,7 @@ const userRoutes = require("./routes/userRoutes");
 const urlRoute = require("./routes/URlRoutes");
 const testRoute = require("./routes/testRoute");
 const path = require("path");
+const { middlewareCall } = require("./middlewares/use");
 
 //const userRoutes = require("./routes/userRoutes");
 
@@ -20,9 +21,9 @@ connectDB();
 
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
+
 //Middlewares
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+middlewareCall();
 
 //Routes
 
